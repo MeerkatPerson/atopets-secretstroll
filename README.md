@@ -9,7 +9,7 @@ Individual parts have more specific and detailed README-files in the respective 
 Implemented the Pointcheval-Sanders anonymous authentication scheme (see `part1/ABC-Guide.pdf` for details). 
 The use case was an application providing users with points of interest in the vicinity of a given geographical location. Importantly, access to the service was granted upon presenting a valid anonymous credential (i.e., users prove their entitlement to use the service with a zero-knowledge-proof).
 
-## Part I: Mount a fingerprinting attack on the Tor network.
+## Part II: Mount a fingerprinting attack on the Tor network.
 
 This was a nice demonstration of the different layers of the network stack regarding privacy. Clearly, the crypto stuff implemented in part1 resides on the application layer. In a setting where the user queries POIs for certain locations from a server over the Tor network, we can use a fingerprinting technique to learn to identify the geographical grid a query pertains to (for simplication, in this part users were only able to query discrete location grids). I.e., we now only rely on network layer metadata to identify traffic patterns and match them to patterns we learned previously (supervised learning).
 
